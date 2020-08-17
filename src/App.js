@@ -1,7 +1,6 @@
 import React from 'react';
 import './App.css';
 import coronaImage from './images/image.png';
-//import BrandsList from './components/brands-list.component';
 import Chart from './components/Chart';
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -21,7 +20,7 @@ class App extends React.Component {
                     />
                     <p><b>McDonald's</b> has 28 restaurants in Washington, DC. It's the third brand in terms of number of restaurants, behind <b>Starbucks</b> and <b>Subway</b>. It's also the second in terms of restaurants with less than 30 reviews, behind <b>Dunkin</b>.</p>
                     <Chart
-                        chart="percentajeChart"
+                        chart="bubbleChart"
                         statistic="total_restaurants" statistic2="less_than_30_reviews"
                         label="Total of restaurants per brand" label2="Restaurants with less than 30 reviews"
                         type="bubble"
